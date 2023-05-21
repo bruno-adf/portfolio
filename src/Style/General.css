@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,500;0,700;1,300&display=swap');
+
+:root {
+    --darkPurple: #181528;
+    --lightPurple: #1D1A31;
+    --darkerPurple: #131024;
+    --green: #98FB0E;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+    border: 3px solid var(--darkPurple);
+    border-radius: 5px;
+    background-color: var(--lightPurple);
+
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--darkPurple);
+}
+
+.margin{margin-bottom: 10px}
+
+h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: white;
+}
+
+h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: white;
+}
+
+h3 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+}
+
+p {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: white;
+}
+
+.italic{
+    font-style: italic;
+    color: var(--green);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 6px 15% 0;
+    position: fixed;
+    width: 100vw;
+    height: 50px;
+    background-color: var(--darkPurple);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    z-index: 4;
+}
+header nav p{
+    position: relative;
+    transition: all 0.3s ease;
+}
+header nav p:hover{
+    cursor: pointer;
+    color: var(--green)
+}
+header nav p:after{
+    position: absolute;
+    box-sizing: border-box;
+    left: 1px;
+    top: 15px;
+    background-color: #98FB0E;
+    content: '';
+    height: 1px;
+    width: 0;
+    transition: all 0.3s ease;
+}
+header nav p:hover:after{
+    width: 100%;
+}
+@media (max-width: 500px){
+    header h2{
+        width: 50px;
+        font-size: 1rem;
+    }
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 35%;
+}

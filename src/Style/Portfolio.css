@@ -1,0 +1,130 @@
+.portfolio {
+    box-sizing: border-box;
+    padding: 50px 15%;
+    width: 100%;
+    height: fit-content;
+    background-color: var(--lightPurple);
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .middle{
+        flex-direction: row-reverse;
+    }
+    .container {
+        margin-top: 50px;
+        margin-bottom: 175px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        .info {
+            max-width: 400px;
+            height: 279px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .video {
+            background-color: antiquewhite;
+            width: 496px;
+            height: 279px;
+            aspect-ratio: auto 16 / 9;
+        }
+
+        .buttons {
+            margin-top: 10px;
+            max-width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .button {
+            display: block;
+            position: relative;
+            background-color: var(--green);
+            height: 30px;
+            width: 48%;
+            border: none;
+        }
+        .button h3{
+            position: relative;
+            z-index: 2;
+            transition: all 0.3s ease;
+            color: var(--darkPurple);
+        }
+        .button:after{ 
+            box-sizing: border-box;
+            position: absolute;
+            top: 0;
+            left: 0;
+            content: '';
+            background-color: rgb(255, 255, 255);
+            width: 0;
+            height: 100%;
+            background-color: var(--lightPurple);
+            border: 2px solid var(--green);
+            transition: all 0.3s ease;
+            opacity: 0;
+        }
+        .button:hover{
+            cursor: pointer;
+            > h3{
+                color: white;
+            }
+        }
+        .button:hover:after{
+            width: 100%;
+            opacity: 1;
+        }
+    }
+}
+
+@media (max-width: 1390px) {
+    .portfolio {
+        .middle{
+            flex-direction: column;
+        }
+        .container {
+            .info {
+                justify-content: flex-start;
+                max-width: 500px;
+                height: fit-content;
+            }
+
+            flex-direction: column;
+            align-items: center;
+
+            .video {
+                margin-bottom: 25px;
+            }
+
+            height: fit-content;
+        }
+    }
+}
+
+@media (max-width: 720px) {
+    .portfolio {
+        .container {
+            .video {
+                width: 400px;
+                height: 225px;
+            }
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    .portfolio {
+        .container {
+            .video {
+                width: 320px;
+                height: 180px;
+            }
+        }
+    }
+}

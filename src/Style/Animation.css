@@ -1,0 +1,54 @@
+.fadeUp{
+    position: relative;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: all 0.8s ease;
+}
+.fadeUpOnce{
+    position: relative;
+    animation: 0.8s ease 1 fadeUpOnceKF;
+}
+@keyframes fadeUpOnceKF {
+    0% {
+      transform: translateX(50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+}
+.fadeUp.active{
+    transform: translateY(0);
+    opacity: 1;
+}
+.fadeDown{
+    position: relative;
+    transform: translateY(-20px);
+    opacity: 0;
+    transition: all 0.8s ease;
+}
+.fadeDown.active{
+    transform: translateY(0);
+    opacity: 1;
+}
+.fadeLeft{
+    position: relative;
+    transform: translateX(150px);
+    opacity: 0;
+    transition: all 0.8s ease;
+}
+.fadeLeft.active{
+    transform: translateX(0);
+    opacity: 1;
+}
+.fadeRight{
+    position: relative;
+    transform: translateX(-150px);
+    opacity: 0;
+    transition: all 0.8s ease;
+}
+.fadeRight.active{
+    transform: translateX(0);
+    opacity: 1;
+}
