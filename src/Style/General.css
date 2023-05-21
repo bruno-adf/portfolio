@@ -72,7 +72,7 @@ header {
 }
 header nav p{
     position: relative;
-    transition: all 0.3s ease;
+    transition: all 0.3s ease ;
 }
 header nav p:hover{
     cursor: pointer;
