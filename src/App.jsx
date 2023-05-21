@@ -1,11 +1,3 @@
-import './Style/reset.css'
-import './Style/General.css'
-import './Style/About.css'
-import './Style/Landing.css'
-import './Style/Portfolio.css'
-import './Style/Animation.css'
-import './Style/Footer.css'
-import './Animations'
 import { SiJavascript, SiCss3, SiReact, SiMysql, SiMongodb, SiNodedotjs, SiWhatsapp } from 'react-icons/si'
 import { GrInstagram, GrLinkedinOption, GrGithub } from 'react-icons/gr'
 
